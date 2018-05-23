@@ -1,0 +1,350 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
+
+
+/*NOTES Regarding the CSS on the NPM Clone: For the header, the CSS positioning falls apart when
+the window shifts in any direction. I am seeking ways to revise the css to correct this. Any tips you have 
+would be greatly appreciated. 
+
+
+Second note: for Header, I will attempt to use the flex-box to correct the header: top section.
+Flexbox should work perfectly for this.
+
+
+*/
+
+* {
+  margin: 0;
+padding: 0;
+font-family: 'Source Sans Pro', 'Lucinda Grande', sans-serif;
+font-weight: 300;
+}
+
+
+/*Nav*/
+
+nav {
+  /*Sourced font family from NPM's website CSS stylesheet*/
+ 
+  font-weight: 300;
+  background-color: #C12127;
+  color: rgba(255,255,255,0.8);
+  padding-top: 15px;
+  height: 17px;
+  position: relative;
+  top: 0px;
+  left:0px;
+}
+
+nav a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+
+.top-left {
+  position: absolute;
+  top: 12%;
+  left: 1%;
+}
+
+.top-links {
+  display: inline-block;
+  float: right;
+  padding: 0;
+  margin: 0 20px 0 0;
+  position: absolute;
+  right: 1%;
+  top: 12%;
+}
+
+
+.top-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+
+/*Header*/
+
+#header {
+  color: rgb(255,255,255);
+  background: rgb(32,101,136);
+  background-image:url('/Users/cruxis/OneDrive/Stable Archive/Coding/IronHack/NPM Clone/lab-html-module-exercise/starter-code/images/city-scape.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  position: relative;  
+}
+
+
+
+
+
+.header-top {
+  height: 40px;
+}
+
+.header-top img {
+position:absolute;
+top: 4%;
+left: 4px;
+height: 40px;
+
+}
+
+.search-bar-button {
+ position: absolute;
+ right: 9.7%;
+ top: 4.4%;
+ height: 35px;
+ width: 34px;
+ background-color: rgb(31,82,111);
+ color: rgba(255,255,255,0.7);
+ border: 1px solid rgba(255,255,255,0.4);
+ font-size: 1em;
+}
+
+.search-bar {
+background: rgb(31, 82, 111);
+width: 80%;
+margin: 0 auto;
+line-height: 33px;
+position:absolute;
+top: 4.4%;
+left: 8%;
+border: 1px solid rgba(255,255,255,0.4);
+color: white;
+text-indent: 10px;
+font-size: 1em;
+
+}
+
+.joinus {
+ display: inline;
+ position: absolute;
+ right: 1.5%;
+ top: 5%;
+}
+
+.joinus a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.8);
+}
+
+
+/* Header-Center */
+.header-center {
+  height: 300px;
+  width: 65%;
+  margin: 0 auto;
+}
+
+
+.header-center h1 {
+  font-size: 2.5em;
+  position: relative;
+  top: 40px
+}
+
+.header-center h2 {
+  font-size: 1.1em;
+  width: 52%;
+  position: relative;
+  top: 55px;
+}
+
+
+.header-center .button {
+  background: rgb(240, 146, 51);
+}
+.button {
+  display: inline-block;
+  height: 35px;
+  width: 150px;
+  border: 2px;
+  border-radius: 2000px;
+  line-height: 2.5em;
+  text-align: center;
+  position: relative;
+  top: 70px;
+  
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+/* Section 1*/
+
+#section1 {
+  background-color: rgb(39,53,71);
+  position: relative;
+}
+
+
+
+
+/* I found the solution! See Section 3 directions*/
+
+
+.npmorgs {
+  margin: 0 auto;
+  float: right;
+  padding: 100px;
+  position: absolute;
+  left:49%;
+
+
+}
+
+#section1 img {
+  position: absolute;
+  top: 20%;
+  left: 18%;
+}
+
+#section1 {
+  height: 500px;
+  background-color: rgb(39,53,71);
+  color: white;
+}
+
+
+#section1 button {
+  background: rgb(203,56,55);
+  border: 1px solid rgb(203,56,55);
+  margin-bottom: 10px;
+  border-radius: 20px;
+  height: 35px;
+  width: 150px;
+}
+
+#section1 h3 {
+  font-size: 2.2em;
+  width: 83%;
+}
+
+
+#section1 ul {
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+#section1 li {
+  margin-bottom: 25px;
+}
+
+    #section1 button a {
+      text-decoration: none;
+        color: white;
+        font-size: 1.4em;
+}
+
+  #section1 p a {
+    text-decoration: none;
+    color: white;
+  }
+  
+ 
+ 
+/*Section 2*/
+
+#section2 {
+  height: 500px;
+  position: relative;
+  color: white;
+  background-image:url('/Users/cruxis/OneDrive/Stable Archive/Coding/IronHack/NPM Clone/lab-html-module-exercise/starter-code/images/forklift.svg');
+
+}
+
+#section2 button {
+  background: rgb(49,68,88);
+  border: 1px solid rgb(49,68,88);
+  border-radius: 20px;
+  height: 35px;
+  width: 100px;
+}
+
+#section2 button a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4em;
+}
+
+#section2 p {
+  font-size: 1.2em;
+  width: 39%;
+  margin-bottom: 20px;
+}
+
+#section2 h3 {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+}
+
+.section2content {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+
+
+/*Section 3 */
+
+#section3 {
+  height: 500px;
+  background: white;
+  position: relative;
+}
+
+#section3 h3 {
+  font: rgb(83,88,98);
+  font-size: 2em;
+  text-align: center;
+}
+
+#section3 h4 {
+  font-weight: 600;
+}
+#section3 p {
+  font: rgb(135,145,156);
+  text-align: center;
+  margin-top: 8px;
+}
+
+
+#section3-2actual {
+  position: absolute;
+  left: 18%;
+  top: 25%;
+}
+
+
+
+.section3a, .section3b, .section3c {
+  width: 20%;
+  float: left;
+  text-align: center;
+  margin: 3%;
+}
+
+
+.section3a a {
+  color: rgb(208,74,73);
+  text-decoration: none;
+}
+
+
+.section3-1 {
+  position: absolute;
+  left: 23%;
+  top: 10%;
+}
+
+
+.clearfix {clear: both;}
+
+
